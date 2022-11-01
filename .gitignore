@@ -1,0 +1,4 @@
+syntax: glob
+*.elc
+*.pyc
+__pycache__
