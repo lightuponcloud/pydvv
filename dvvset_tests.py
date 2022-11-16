@@ -26,7 +26,6 @@ class TestDVVSet(unittest.TestCase):
         A3 = self.dvvset.update(self.dvvset.new_list_with_history(self.dvvset.join(A0),["v4"]), A1, "b")
         A4 = self.dvvset.update(self.dvvset.new_list_with_history(self.dvvset.join(A0),["v5"]), A1, "a")
 
-        import pdb;pdb.set_trace()
         self.assertEqual( A0 , [[["a",1,["v1"]]],[]])
         self.assertEqual( A1 , [[["a",2,["v2"]]],[]])
         self.assertEqual( A2 , [[["a",2,[]], ["b",1,["v3"]]],[]])
